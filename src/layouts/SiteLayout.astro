@@ -1,5 +1,5 @@
 ---
-import { SignedIn, SignedOut, UserButton } from "@clerk/astro/components";
+import { SignedIn, SignedOut, UserButton, SignInButton } from "@clerk/astro/components";
 
 const { title } = Astro.props;
 ---
@@ -16,7 +16,7 @@ const { title } = Astro.props;
       <h1>{title}</h1>
       <nav>
         <SignedOut>
-          <a href="/sign-in">Sign In</a>
+          <SignInButton mode="redirect" />
         </SignedOut>
         <SignedIn>
           <UserButton />

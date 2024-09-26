@@ -1,3 +1,6 @@
+.env
+.netlify/
+
 # build output
 dist/
 # generated types
